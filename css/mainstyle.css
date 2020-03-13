@@ -67,3 +67,20 @@ h2{
   background-repeat: no-repeat;
 }
 
+/* Responsive */
+@media(min-width:700px){
+  #start-page{
+    display: flex;
+    height: 100vh;
+  }
+
+  #start-page-text{
+    flex: 0 1 40vw;
+    padding-top: 12rem;
+  }
+
+  #start-page-image{
+    flex: 0 1 60vw;
+    height: 100vh;
+  }
+}
