@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota+Text|Quicksand|Raleway&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Bellota Text", cursive;
+  background: #c4c4c4;
+}
+
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  padding: 1rem;
+  background: #0a0711;
+  color: #f4f4f4;
+  min-height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+header li{
+  display: inline;
+  padding: 0.3rem 0.5rem;
+}
+
+header #logo{
+  float: left;
+}
+
+header #logo h1{
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header nav{
+  float: right;
+  padding-top: 0.4rem;
+}
+
+header nav a{
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav a:hover{
+  font-weight: bold;
+  color: #695fc7;
+  text-decoration: underline;
+}
+
+#showcase{
+  height: 100vh;
+  background: url(/img/showcase2.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #f4f4f4;
+  display: flex;
+}
+
+#showcase h1{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#showcase p{
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+#showcase .middle{
+  background: rgba(0,0,0,0.5);
+}
+
+.center{
+  border: 3px solid #cccccc;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about{
+  display: flex;
+  font-size: 1.8rem;
+  height: 100vh;
+}
+
+#skills{
+  height: 100vh;
+  font-size: 1.5rem;
+  background: #333333;
+  color: #eeeeee;
+  width: inherit;
+}
+
+#skills h1{
+  font-size: 2rem;
+}
+
+#skills p{
+  font-size: 1.5rem;
+}
+
+#skills .skillbox, #contacts .box{
+  float: left;
+  width: 33.3%;
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#skills .skillbox h3{
+  font-size: 1.7rem;
+}
+
+#projects{
+  height: 100vh;
+  padding: 3rem;
+  background: url(/img/image1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+}
+
+#projects p{
+  font-size: 1.5rem;
+}
+
+#contacts{
+  margin-bottom: 70px;
+}
+#contacts .box a{
+  color: inherit;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#contacts .box a:hover{
+  text-decoration: underline;
+}
+footer{
+  height: 70px;
+  background: #0a0711;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  font-size: 1.3rem;
+}
