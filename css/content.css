@@ -49,6 +49,10 @@ header #logo a{
   font-weight: bold;
 }
 
+#header-2{
+  display: none;
+}
+
 #logo a:hover{
   color: #695fc7;
 }
@@ -109,11 +113,11 @@ header nav a:hover{
 #about{
   display: flex;
   font-size: 1.8rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #skills{
-  height: 100vh;
+  min-height: 100vh;
   font-size: 1.5rem;
   width: inherit;
 }
@@ -171,4 +175,166 @@ footer{
   text-align: center;
   padding: 1.5rem 3rem;
   font-size: 1.3rem;
+}
+
+@media(max-width:768px){
+  header{
+    display: none;
+  }
+
+  #header-2{
+    display: block;
+    padding: 1rem;
+    background: #0a0711;
+    color: #f4f4f4;
+    min-height: 30 px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  #smallnav{
+    overflow: hidden;
+    background: #0a0711;
+    position: relative;
+  }
+
+  #smallnav #nav{
+    display: none;
+  }
+
+  #smallnav li{
+    padding: 0.5rem 0.5rem;
+  }
+  
+  #smallnav a{
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #smallnav a.icon{
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  #about{
+    font-size: 1.3rem;
+  }
+
+  #projects h1{
+    text-align: center;
+  }
+  
+  #skills h1, p, #contacts h2{
+    text-align: center;
+  }
+  
+  #skills .skillbox, #contacts .box{
+    float: none;
+    width: 100%;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #skills h3{
+    text-align: center;
+  }
+
+  #skills ul{
+    list-style-type: disc;
+    margin: 1em 0;
+    padding-left: 2rem;
+  }
+}
+
+@media(max-width:375px){
+  #skills ul{
+    list-style-type: disc;
+    margin: 1.5em 0;
+    padding-left: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  footer{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:320px){
+  #skills ul{
+    list-style-type: disc;
+    margin: 1.5em 0;
+    padding-left: 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  #footer{
+    font-size: 0.8rem;
+  }
+}
+
+/*Very small screens*/
+@media(max-width:210px){
+  #showcase h1{
+    font-size:1.5rem;
+  }
+
+  .container{
+    width: 98%;
+  }
+
+  .center{
+    border: 3px solid #cccccc;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #about{
+    font-size: 1.2rem;
+  }
+  
+  #skills h1{
+    font-size: 1.5rem;
+  }
+
+  #skills .skillbox h3{
+    font-size: 1.2rem;
+  }
+
+  #skills .skillbox p, #contacts .box{
+    font-size: 1rem;
+  }
+
+  #skills ul{
+    list-style-type: disc;
+    margin: 1rem 0;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+  }
+
+  #projects h1, #projects p{
+    background: rgba(0,0,0,0.5);
+  }
+  
+  #projects p{
+    font-size: 1rem;
+  }
+
+  #contacts h2{
+    font-size: 1.3rem;
+  }
+
+  footer{
+    font-size: 1rem;
+    min-height: 100px;
+  }
 }
