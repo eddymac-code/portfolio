@@ -40,9 +40,17 @@ header #logo{
   float: left;
 }
 
-header #logo h1{
+header #logo a{
   margin: 0;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#logo a:hover{
+  color: #695fc7;
 }
 
 header nav{
@@ -107,8 +115,6 @@ header nav a:hover{
 #skills{
   height: 100vh;
   font-size: 1.5rem;
-  background: #333333;
-  color: #eeeeee;
   width: inherit;
 }
 
