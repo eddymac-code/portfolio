@@ -60,7 +60,7 @@ h2{
 }
 
 #start-page-image{
-  background: url(/img/showcase1.jpg);
+  background: url(../img/showcase1.jpg);
   height: 50vh;
   background-position: center;
   background-size: cover;
