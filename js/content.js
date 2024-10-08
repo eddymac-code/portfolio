@@ -32,3 +32,8 @@ function lilMenu() {
     x.style.display = "block";
   }
 }
+
+let today = new Date()
+let currentYear = today.getFullYear()
+let dateSpan = document.querySelector('#date')
+dateSpan.textContent = currentYear
