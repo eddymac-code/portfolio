@@ -1,5 +1,5 @@
 <script setup>
-// No logic needed yet
+const resumeLink = import.meta.env.BASE_URL + 'resume.pdf'
 </script>
 
 <template>
@@ -12,7 +12,7 @@
       </p>
 
       <div class="buttons">
-        <a :href="import.meta.env.BASE_URL + 'resume.pdf'" download class="btn">Download Resume</a>
+        <a :href="resumeLink" download class="btn">Download Resume</a>
         <a href="#contact" class="btn secondary">Contact Me</a>
       </div>
     </div>
