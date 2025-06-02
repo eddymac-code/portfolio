@@ -63,7 +63,9 @@ const handleSubmit = async () => {
       <p v-if="error" class="error-msg">❌ Something went wrong. Try again later.</p>
 
       <div class="resume-link">
-        <a href="/resume.pdf" download class="download-btn">Download Resume</a>
+        <a :href="import.meta.env.BASE_URL + 'resume.pdf'" download class="download-btn"
+          >Download Resume</a
+        >
       </div>
     </div>
   </section>

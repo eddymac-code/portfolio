@@ -12,7 +12,7 @@
       </p>
 
       <div class="buttons">
-        <a href="/resume.pdf" download class="btn">Download Resume</a>
+        <a :href="import.meta.env.BASE_URL + 'resume.pdf'" download class="btn">Download Resume</a>
         <a href="#contact" class="btn secondary">Contact Me</a>
       </div>
     </div>
